@@ -15,5 +15,21 @@ Mr. Pandey runs a restaurant he had modorate customer base due to the area the r
 Here is the big companies using Dialogflow as chat-bot and perfectly working
 ![image](https://github.com/user-attachments/assets/848410c5-8574-48a7-bc2d-482373e867fd)
 Now Iam 100% confident that using Dialogflow is not worst decision
+Specifically I used Dialogflow essentials it has Training Phrases - Phrases you can expect from users, that will trigger. When a user says something similar to a training phrase, Dialogflow matches it to the intent. You don’t have to create an exhaustive list. Dialogflow will fill out the list with similar expressions. To extract parameter values, use annotations with available system or custom entity types.
+the intent.
+Chat Bot Responses - Text, spoken and media rich responses the chat bot will deliver to a user.
+
+For Example, When user type Hi or Hey the Chat Bot replies Hello, How can I help you? you can say "New Order" or "Track Order"
+The work starts from creating necessary intents(In Dialogflow, an intent is a messaging object that categorizes an end-user's intention for a single conversation turn)
+I created thease intents:
+![image](https://github.com/user-attachments/assets/725993df-260f-41f9-a6ef-f92d0a2b573a)
+order.add - context: ongoing-order
+order.complete - context: ongoing-order
+order.remove - context: ongoing-order
+track.order - context: ongoing-tracking
+for thease intents I enabled fulfillment because to create webhook for thease intents which are work in backend which contents to MySQL feel free head to backend directory to check the main.py code
+Added food-item entities because sometimes user may do spell mistakes or use other food item name
+At final the website URL has to paste in webhook in order to link chatbot to the website and integrate the chat bot in website.
+
 This is the final product you can take a look
 ![image](https://github.com/user-attachments/assets/a682cb29-4a13-4e3e-b12f-21a6e34b0a89)
