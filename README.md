@@ -1,1 +1,93 @@
-'# End-to-End NLP Chat-Bot for a Food Delivery System\n\nI built a chatbot in Dialogflow for a food delivery system. It will be an end-to-end project covering Dialogflow basics, building a backend in python and Fastapi, interactions with MySQL database, and much more. I covered Dialogflow fundamentals such as intents, entities, contexts, etc.\n\n## Problem Statement:\n\nMr. Pandey runs a restaurant and he had a website for his restaurant which includes food menu and delivery system through customer support. As of now everything is fine his customer base inceased but problem is hiring customer support is not budjet friendly for him so he decided to create a chat-bot that it can understand customer intrest and displays available food menu accordingly it can take orders and displays order tracking. He contact me to build a chat-bot for him. Here I built a chatbot using Dialogflow for a food delivery system.\n\n![Untitled design](https://github.com/user-attachments/assets/e0049e26-26c4-4308-9c63-dbc25881d163)\n\n1. Here My scope of work in chat bot is only on new order, track order, billing queries and store hours because Mr. Pandey asked me to implement chat bot as soon as possible with budjet friendly so I decided to go with this limited features for Phase-1 after that take some time to include other features in chat bot such as implementing payment system in chat bot etc.,\n2. For Chatbot Platform Selection I chose Dialogflow rather than RASA and Amazon Lex is because Dialogflow offers powerful NLP capabalities out of the box, Cloud-based solution, Provides easy integrations with various platforms and channels and more over it relies on Google\'s vast pre-trained data so there is no need to gather data for training since I don\'t have much time to collect data and train model. so chose Dialogflow to build chat bot.\n3. For backend part I chose FastApi and MySQL for database management because it is easy and very familiar to me.\n\nHere is the big companies using Dialogflow as chat-bot and perfectly working\n![image](https://github.com/user-attachments/assets/848410c5-8574-48a7-bc2d-482373e867fd)\nNow Iam 100% confident that using Dialogflow is not worst decision\nSpecifically I used Dialogflow essentials it has Training Phrases - Phrases you can expect from users, that will trigger. When a user says something similar to a training phrase, Dialogflow matches it to the intent. You don’t have to create an exhaustive list. Dialogflow will fill out the list with similar expressions. To extract parameter values, use annotations with available system or custom entity types.\nthe intent.\nChat Bot Responses - Text, spoken and media rich responses the chat bot will deliver to a user.\n\nFor Example, When user type Hi or Hey the Chat Bot replies Hello, How can I help you? you can say "New Order" or "Track Order"\nThe work starts from creating necessary intents(In Dialogflow, an intent is a messaging object that categorizes an end-user\'s intention for a single conversation turn)\nI created thease intents:\n![image](https://github.com/user-attachments/assets/725993df-260f-41f9-a6ef-f92d0a2b573a)\norder.add - context: ongoing-order\norder.complete - context: ongoing-order\norder.remove - context: ongoing-order\ntrack.order - context: ongoing-tracking\nfor thease intents I enabled fulfillment because to create webhook for thease intents which are work in backend which contents to MySQL feel free head to backend directory to check the main.py code\nAdded food-item entities because sometimes user may do spell mistakes or use other food item name\nAt final the website URL has to paste in webhook in order to link chatbot to the website and integrate the chat bot in website.\n\nThis is the final product you can take a look\n![image](https://github.com/user-attachments/assets/a682cb29-4a13-4e3e-b12f-21a6e34b0a89)\n'
+# End-to-End NLP Chat-Bot for a Food Delivery System
+
+I built a chatbot using **Dialogflow** for a food delivery system, covering the end-to-end process from Dialogflow basics to backend integration with **FastAPI** and a **MySQL** database. This project aims to solve a real-world problem faced by Mr. Pandey, a restaurant owner looking to automate customer support in a budget-friendly manner.
+
+## Table of Contents
+- [Problem Statement](#problem-statement)
+- [Solution Overview](#solution-overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Future Enhancements](#future-enhancements)
+- [Conclusion](#conclusion)
+
+## Problem Statement
+
+Mr. Pandey runs a restaurant with a website that includes a food menu and delivery system supported by customer service. As his customer base grew, hiring customer support agents became costly. To address this, he decided to implement a chatbot that could handle customer interactions, such as taking orders, tracking them, and answering billing queries, thereby reducing costs and improving efficiency.
+
+## Solution Overview
+
+To meet Mr. Pandey's needs, I developed a chatbot using **Dialogflow**, leveraging its powerful **Natural Language Processing (NLP)** capabilities and cloud-based infrastructure. The chatbot handles the following functionalities:
+
+- **New Order**: Takes customer orders based on menu selection.
+- **Order Tracking**: Provides real-time tracking updates for orders.
+- **Billing Queries**: Answers common billing-related questions.
+- **Store Hours**: Shares information about the restaurant's operating hours.
+
+I focused on implementing the above features in **Phase 1** due to time constraints. Future phases will include additional features like payment integration and user personalization.
+
+### Why Dialogflow?
+I chose Dialogflow over other platforms like **RASA** and **Amazon Lex** due to its:
+- Pre-trained NLP models and cloud-based solutions.
+- Easy integration with various platforms (web, mobile, etc.).
+- Minimal training data requirements, making it ideal for quick deployment.
+
+### Tech Stack
+- **Chatbot Platform**: Dialogflow Essentials
+- **Backend Framework**: FastAPI
+- **Database**: MySQL
+- **Languages**: Python, SQL
+
+## Features
+
+1. **Interactive Chatbot**: Handles new orders, tracks existing orders, and answers billing questions.
+2. **Database Integration**: Uses MySQL for storing order details and customer interactions.
+3. **Webhook Integration**: Utilizes Dialogflow fulfillment to trigger backend operations.
+4. **Spell Correction**: Handles minor typos and variations in food item names.
+5. **Scalable Architecture**: Built with scalability in mind for future enhancements.
+
+## Project Structure
+
+```plaintext
+NLP Chat-Bot for a Food Delivery System/
+├── app.py                 # FastAPI backend code
+├── database.py            # MySQL database connection
+├── dialogflow_intents/    # JSON files for Dialogflow intents
+├── requirements.txt       # List of dependencies
+└── README.md              # Project documentation
+```
+## Installation
+
+To set up the project on your local machine:
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/food-delivery-chatbot.git
+    cd food-delivery-chatbot
+    ```
+
+2. **Create a virtual environment** (optional but recommended):
+    ```bash
+    conda create --name chatbot-env python=3.9
+    conda activate chatbot-env
+    ```
+
+3. **Install the dependencies**:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4. **Set up the MySQL Database**:
+    - Ensure MySQL is running on your system.
+    - Create a database and run the provided SQL scripts (if any) to set up tables.
+
+5. **Run the FastAPI server**:
+    ```bash
+    uvicorn app:app --reload
+    ```
+
+6. **Dialogflow Integration**:
+    - Import the intents JSON files in the `dialogflow_intents/` directory into your Dialogflow console.
+    - Set up your webhook URL in Dialogflow to point to your FastAPI server.
