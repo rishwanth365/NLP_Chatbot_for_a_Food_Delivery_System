@@ -1,0 +1,125 @@
+{
+  "id": "b2f2eaeb-6eea-4ae4-a57c-b8edca592e85",
+  "name": "store.hours",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Here are our store hours,\nSat — IO am to IO pm\nSun — IO am to IO pm"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when the store closes",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1278f7ab-cd6a-4cc7-af18-b126a20fa893",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when the store opens",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "a4c23633-da05-4cc8-9e2a-c60301d908ba",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what are the store hours",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "2c5c5773-e5f1-4f25-8e7d-ca5ccc4a7fd4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "hotel timings",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ea4da433-510d-43f4-ba5a-bd0057ea41ac",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "what are the restaurant timings",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "92236017-62e5-44a2-8229-8a3126ad355c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when the restaurant opens",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "dc05ca3c-80af-4cbf-9028-d3475c021eee",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "when the restaurant closes",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "bbcaa29a-f7af-4dcd-ade7-4643ec4f1b4a",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

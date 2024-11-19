@@ -1,0 +1,84 @@
+{
+  "id": "8b8aa47e-9234-4a94-8ae9-a2622cc328d4",
+  "name": "track.order",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [
+        {
+          "name": "ongoing-tracking",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Definitely. What is your order id?",
+            "Sure. Please enter your order id.",
+            "Definitely. What is your order id?"
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "track order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "da08cb34-feb5-4c25-b842-454cc8463556",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "track existing order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "c858675b-3fcf-4a48-8fa6-4a76b4c2a77e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "check the status of my order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "709b84d6-f792-4633-8da1-5ed0b8d0447c",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}

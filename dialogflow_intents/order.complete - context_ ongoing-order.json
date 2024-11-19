@@ -1,0 +1,109 @@
+{
+  "id": "4ef1255b-d033-4f5a-8d25-5fef4ade5607",
+  "name": "order.complete - context: ongoing-order",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "ongoing-order"
+  ],
+  "contexts": [
+    "ongoing-order"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "defaultResponsePlatforms": {},
+      "messages": [],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That's it",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6e589fac-9924-4595-965b-e319746c590d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Done",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "1993745e-fb72-46e4-9e68-479c2f8f864e",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Place an order",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e9e3de6d-2965-4b4b-bb7f-d6f9a396b13c",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Done ordering it",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "6704fb0b-164f-47b2-b37b-597e881c33ed",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "That's all I needed thankyou for asking",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "5731a95e-8352-469a-9007-08e89cb390f5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Nope",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "b6455d41-0973-4bc6-8014-e774ca309f1b",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}
