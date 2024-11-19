@@ -70,8 +70,8 @@ To set up the project on your local machine:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/rishwanth365/food-delivery-chatbot.git
-    cd food-delivery-chatbot
+    git clone https://github.com/rishwanth365/NLP_Chat-Bot_for_a_Food_Delivery_System.git
+    cd NLP_Chat-Bot_for_a_Food_Delivery_System
     ```
 
 2. **Install the dependencies**:
@@ -99,8 +99,8 @@ NOTE: ngrok can timeout. you need to restart the session if you see session expi
     - Paste your webhook URL in Dialogflow Fulfillment section to point to your FastAPI server.
 
 ## Usage
-    - Go to Integrations section/ Web Demo to test the chat bot.
-    - Now integrate the chat bot in your website or you can just test it.
+- Go to Integrations section/ Web Demo to test the chat bot.
+- Now integrate the chat bot in your website or you can just test it.
 
 Here it is mine you can take a look "https://console.dialogflow.com/api-client/demo/embedded/c29081ce-f2ca-4efe-a644-80804955b75d"
 
