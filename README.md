@@ -1,4 +1,4 @@
-# NLP Chat-Bot for a Food Delivery System Using Dialoflow
+# NLP Chat-Bot for a Food Delivery System Using Dialogflow
 
 I built a chatbot using **Dialogflow** for a food delivery system, covering the end-to-end process from Dialogflow basics to backend integration with **FastAPI** and a **MySQL** database. This project aims to solve a real-world problem faced by Mr. Pandey, a restaurant owner looking to automate customer support in a budget-friendly manner.
 
